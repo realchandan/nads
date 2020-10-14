@@ -1,0 +1,2 @@
+include ":app", ":nads"
+rootProject.name = "Native Ad Templates"
