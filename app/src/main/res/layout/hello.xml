@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Hello">
 
     <app.chandan.nads.TemplateView
-        android:id="@+id/template"
-        app:gnt_template_type="@layout/gnt_small_template_view"
+        android:id="@+id/small_template"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+    <app.chandan.nads.TemplateView
+        android:id="@+id/medium_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/small_template"
+        app:gnt_template_type="@layout/gnt_medium_template_view" />
 </RelativeLayout>

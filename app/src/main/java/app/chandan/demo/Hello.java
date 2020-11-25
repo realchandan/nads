@@ -17,18 +17,33 @@ public class Hello extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hello);
-        TemplateView template = findViewById(R.id.template);
-        AdLoader adLoader = new AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+        // load small sized native ad
+        TemplateView small_template = findViewById(R.id.small_template);
+        AdLoader adLoader1 = new AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
                 .forUnifiedNativeAd(unifiedNativeAd -> {
                     NativeTemplateStyle styles = new
                             NativeTemplateStyle.Builder()
                             .withMainBackgroundColor(new ColorDrawable(0xFFFF6666))
                             .build();
 
-                    template.setStyles(styles);
-                    template.setNativeAd(unifiedNativeAd);
+                    small_template.setStyles(styles);
+                    small_template.setNativeAd(unifiedNativeAd);
                 })
                 .build();
-        adLoader.loadAd(new AdRequest.Builder().build());
+        adLoader1.loadAd(new AdRequest.Builder().build());
+        // load medium sized native ad
+        TemplateView medium_template = findViewById(R.id.medium_template);
+        AdLoader adLoader2 = new AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+                .forUnifiedNativeAd(unifiedNativeAd -> {
+                    NativeTemplateStyle styles = new
+                            NativeTemplateStyle.Builder()
+                            .withMainBackgroundColor(new ColorDrawable(0xFFFF6666))
+                            .build();
+
+                    medium_template.setStyles(styles);
+                    medium_template.setNativeAd(unifiedNativeAd);
+                })
+                .build();
+        adLoader2.loadAd(new AdRequest.Builder().build());
     }
 }
