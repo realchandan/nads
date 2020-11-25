@@ -10,6 +10,6 @@ allprojects {
 ## Add below to app level gradle
 ```groovy
 dependencies {
-	implementation 'com.github.realchandan:nads:1.0.0'
+	implementation 'com.github.realchandan:nads:1.1'
 }
 ```
