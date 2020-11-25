@@ -169,7 +169,7 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:id="+@id/third_line"
+                                android:id="@+id/third_line"
                                 android:layout_width="fill_parent"
                                 android:layout_height="@dimen/gnt_no_size"
                                 android:layout_weight="@dimen/gnt_text_row_weight"
@@ -180,7 +180,7 @@
                                 app:layout_constraintTop_toBottomOf="@id/body">
 
                                 <TextView
-                                    android:id="+@id/tertiary"
+                                    android:id="@+id/tertiary"
                                     android:layout_width="fill_parent"
                                     android:layout_height="fill_parent"
                                     android:layout_marginTop="@dimen/gnt_no_margin"
@@ -223,7 +223,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <LinearLayout
-                        android:id="+@id/cta_parent"
+                        android:id="@+id/cta_parent"
                         android:layout_width="@dimen/gnt_no_size"
                         android:layout_height="@dimen/gnt_medium_cta_button_height"
                         android:layout_marginTop="@dimen/gnt_default_margin"
