@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright © `2020` `Chandan <yp2caf2oo@relay.firefox.com>`
+Copyright © `2020` `Chandan <apps@skyu.dev>`
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
